@@ -1,0 +1,15 @@
+pipeline 
+{
+    agent any
+
+    stages 
+    {
+        stage('downloading web appliaction into instance ') 
+        {
+            steps 
+            {
+              git 'https://github.com/DhirajGitHub0910/web_application.git'  
+            }
+        }
+    }
+}
