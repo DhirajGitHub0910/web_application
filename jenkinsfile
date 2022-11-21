@@ -15,14 +15,14 @@ pipeline
         {
             steps 
             {
-              sh 'sudo cp -r home.html /var/www/html/index.html' 
+              sh 'sudo chmod 777 shell123.sh' 
             }
         }
         stage('restart nginx server ') 
         {
             steps 
             {
-              sh 'sudo service nginx restart' 
+              sh './shell123.sh' 
             }
         }
 
