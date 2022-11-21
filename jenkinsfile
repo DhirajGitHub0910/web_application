@@ -15,7 +15,7 @@ pipeline
         {
             steps 
             {
-              sh 'sudo chmod 777 shell123.sh' 
+              sh 'echo "hello' 
             }
         }
         stage('restart nginx server ') 
