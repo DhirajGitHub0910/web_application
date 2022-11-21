@@ -15,7 +15,7 @@ pipeline
         {
             steps 
             {
-              sh 'sudo cp home.html /var/www/html/index.html' 
+              sh 'sudo cp -r home.html /var/www/html/index.html' 
             }
         }
         stage('restart nginx server ') 
