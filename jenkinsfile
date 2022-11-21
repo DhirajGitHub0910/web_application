@@ -15,14 +15,14 @@ pipeline
         {
             steps 
             {
-              sh 'cp -r home.html /var/www/html/index.html' 
+              sh 'sudo cp -r home.html /var/www/html/index.html' 
             }
         }
         stage('restart nginx server ') 
         {
             steps 
             {
-              sh 'service nginx restart' 
+              sh 'sudo service nginx restart' 
             }
         }
 
