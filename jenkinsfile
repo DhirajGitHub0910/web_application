@@ -11,5 +11,20 @@ pipeline
               git 'https://github.com/DhirajGitHub0910/web_application.git'  
             }
         }
+        stage('copying webapplication into nginx server ') 
+        {
+            steps 
+            {
+              sh 'sudo cp home.html /var/www/html/index.html' 
+            }
+        }
+        stage('restart nginx server ') 
+        {
+            steps 
+            {
+              sh 'sudo service nginx restart' 
+            }
+        }
+
     }
 }
